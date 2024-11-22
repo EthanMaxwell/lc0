@@ -710,7 +710,7 @@ endif
 ## Tests
 #############################################################################
 
-if get_option('gtest')
+if get_option('gtest') or false
   gtest = dependency('gtest', fallback: ['gtest', 'gtest_dep'])
   lc0_lib = library('lc0_lib', files, include_directories: includes, dependencies: deps)
 
