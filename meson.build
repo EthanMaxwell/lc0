@@ -713,7 +713,6 @@ endif
 if get_option('gtest')
   gtest = dependency('gtest', fallback: ['gtest', 'gtest_dep'])
   lc0_lib = library('lc0_lib', files, include_directories: includes, dependencies: deps)
-  run_command('echo', 'lc0_lib location:', lc0_lib.full_path())
 
   test('ChessBoard',
     executable('chessboard_test', 'src/chess/board_test.cc',
