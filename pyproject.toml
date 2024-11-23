@@ -22,8 +22,6 @@ homepage = "https://github.com/LeelaChessZero/lc0"
 
 [tool.meson-python.args]
 dist = []
-[tool.meson-python.args]
-dist = []
 setup = [
     "-Dpython_bindings=true",
     "-Ddx=false",
