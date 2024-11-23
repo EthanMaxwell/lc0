@@ -22,6 +22,24 @@ homepage = "https://github.com/LeelaChessZero/lc0"
 
 [tool.meson-python.args]
 dist = []
-setup = ["-Dpython_bindings=true"]
+[tool.meson-python.args]
+dist = []
+setup = [
+    "-Dpython_bindings=true",
+    "-Ddx=false",
+    "-Dcudnn=true",
+    "-Dplain_cuda=true",
+    "-Dopencl=false",
+    "-Dblas=true",
+    "-Dmkl=false",
+    "-Dopenblas=false",
+    "-Ddnnl=false",
+    "-Dgtest=false",
+    "-Dcudnn_include=C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.6\\include,C:\\Program Files\\NVIDIA\\CUDNN\\v9.5\\include\\12.6",
+    "-Dcudnn_libdirs=C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.6\\lib\\x64,C:\\Program Files\\NVIDIA\\CUDNN\\v9.5\\lib\\x64\\12.6",
+    "-Dopencl_libdirs=C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.6\\lib\\x64",
+    "-Dopencl_include=C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.6\\include",
+    "-Ddefault_library=static"
+]
 compile = []
 install = []
