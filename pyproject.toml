@@ -37,7 +37,6 @@ setup = [
     "-Dcudnn_libdirs=C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.6\\lib\\x64,C:\\Program Files\\NVIDIA\\CUDNN\\v9.5\\lib\\x64\\12.6",
     "-Dopencl_libdirs=C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.6\\lib\\x64",
     "-Dopencl_include=C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.6\\include",
-    "-Ddefault_library=static"
 ]
 compile = []
 install = []
